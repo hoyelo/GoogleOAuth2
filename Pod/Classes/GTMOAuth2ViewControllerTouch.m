@@ -335,7 +335,7 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
   }
 
   if (accessibility == NULL
-      && &kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly != NULL) {
+      && kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly != nil) {
     accessibility = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly;
   }
 
@@ -1080,7 +1080,7 @@ static Class gSignInClass = Nil;
       NSData *passwordData = [password dataUsingEncoding:NSUTF8StringEncoding];
       [keychainQuery setObject:passwordData forKey:(id)kSecValueData];
 
-      if (accessibility != NULL && &kSecAttrAccessible != NULL) {
+      if (accessibility != NULL && kSecAttrAccessible != nil) {
         [keychainQuery setObject:(id)accessibility
                           forKey:(id)kSecAttrAccessible];
       }
