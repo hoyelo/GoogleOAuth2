@@ -49,10 +49,6 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
 @synthesize request = request_,
             systemCookies = systemCookies_,
             signInCookies = signInCookies_,
-            backButton = backButton_,
-            forwardButton = forwardButton_,
-            navButtonsView = navButtonsView_,
-            rightBarButtonItem = rightBarButtonItem_,
             webView = webView_,
             initialActivityIndicator = initialActivityIndicator_;
 
@@ -220,11 +216,7 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
 - (void)dealloc {
   [webView_ setDelegate:nil];
 
-  [backButton_ release];
-  [forwardButton_ release];
   [initialActivityIndicator_ release];
-  [navButtonsView_ release];
-  [rightBarButtonItem_ release];
   [webView_ stopLoading];
   [webView_ release];
   [signIn_ release];
@@ -252,7 +244,7 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
 
 + (NSBundle *)authNibBundle {
   // subclasses may override this to specify a custom nib bundle
-  return nil;
+  return [NSBundle bundleForClass:self];
 }
 
 #if !GTM_OAUTH2_SKIP_GOOGLE_SUPPORT
@@ -373,17 +365,6 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
     NSLog(@"missing %@.nib", nibName);
 #endif
   }
-}
-
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  [self setUpNavigation];
-}
-
-- (void)setUpNavigation {
-  rightBarButtonItem_.customView = navButtonsView_;
-  self.navigationItem.rightBarButtonItem = rightBarButtonItem_;
 }
 
 - (void)popView {
@@ -810,16 +791,10 @@ static Class gSignInClass = Nil;
   return YES;
 }
 
-- (void)updateUI {
-  [backButton_ setEnabled:[[self webView] canGoBack]];
-  [forwardButton_ setEnabled:[[self webView] canGoForward]];
-}
-
 - (void)webViewDidStartLoad:(UIWebView *)webView {
   [self notifyWithName:kGTMOAuth2WebViewStartedLoading
                webView:webView
                   kind:nil];
-  [self updateUI];
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
@@ -845,8 +820,6 @@ static Class gSignInClass = Nil;
   } else {
     [initialActivityIndicator_ setHidden:YES];
     [signIn_ cookiesChanged:[NSHTTPCookieStorage sharedHTTPCookieStorage]];
-
-    [self updateUI];
   }
 }
 

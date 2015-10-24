@@ -56,11 +56,7 @@ typedef void (^GTMOAuth2ViewControllerCompletionHandler)(GTMOAuth2ViewController
 
 @interface GTMOAuth2ViewControllerTouch : UIViewController<UINavigationControllerDelegate, UIWebViewDelegate> {
  @private
-  UIButton *backButton_;
-  UIButton *forwardButton_;
   UIActivityIndicatorView *initialActivityIndicator_;
-  UIView *navButtonsView_;
-  UIBarButtonItem *rightBarButtonItem_;
   UIWebView *webView_;
 
   // The object responsible for the sign-in networking sequence; it holds
@@ -162,11 +158,7 @@ typedef void (^GTMOAuth2ViewControllerCompletionHandler)(GTMOAuth2ViewController
 @property (nonatomic, retain, readonly) GTMOAuth2SignIn *signIn;
 
 // user interface elements
-@property (nonatomic, retain) IBOutlet UIButton *backButton;
-@property (nonatomic, retain) IBOutlet UIButton *forwardButton;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *initialActivityIndicator;
-@property (nonatomic, retain) IBOutlet UIView *navButtonsView;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *rightBarButtonItem;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 
 #if NS_BLOCKS_AVAILABLE
@@ -278,10 +270,6 @@ typedef void (^GTMOAuth2ViewControllerCompletionHandler)(GTMOAuth2ViewController
 
 // subclasses may override authNibBundle to specify a custom bundle
 + (NSBundle *)authNibBundle;
-
-// subclasses may override setUpNavigation to provide their own navigation
-// controls
-- (void)setUpNavigation;
 
 // Swaps out the system cookies. The default implementation saves the system
 // cookies and then switches to the cookies used for sign-in, initally empty.
