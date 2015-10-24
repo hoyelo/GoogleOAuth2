@@ -9,10 +9,9 @@
 Pod::Spec.new do |s|
   s.name             = "GoogleOAuth2"
   s.version          = "1.0.126"
-  s.summary          = "Google OAuth 2 Controllers"
+  s.summary          = "Google OAuth 2 Controllers (Support 'use_frameworks!')"
   s.description      = <<-DESC
                      The Google Toolbox for Mac OAuth 2 Controllers make it easy for Cocoa\n                    applications to sign in to services using OAuth 2 for authentication\n                    and authorization.\n\n                    This version can be used with iOS ≥ 5.0 or OS X ≥ 10.7.\n                    To target earlier versions of iOS or OS X, use\n\n                    pod 'gtm-oauth2', '~> 1.0.125'\n                      \n                    podspec version based on source SVN revision\n
-                     Note: Support to use 'use_frameworks!'
                        DESC
   s.homepage         = "https://github.com/hoyelo/GoogleOAuth2"
   s.license          = 'MIT'
