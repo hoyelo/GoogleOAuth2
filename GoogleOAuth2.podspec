@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = false
 
-  s.source_files = 'Pod/Classes/**/*.{h,m}'
+  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'GoogleOAuth2' => ['Pod/Assets/*.png', 'Pod/Classes/**/*.{xib}']
+    'GoogleOAuth2' => ['Pod/Assets/*.png']
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
