@@ -28,5 +28,5 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'Security', 'SystemConfiguration'
-  s.dependency 'gtm-http-fetcher', '~> 1.0.141'
+  s.dependency 'GTMHTTPFetcher', '~> 1.0.141'
 end
