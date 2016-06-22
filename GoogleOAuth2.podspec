@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/hoyelo/GoogleOAuth2"
   s.license = 'MIT'
   s.author = 'Google Inc.'
-  s.source = { :git => "https://github.com/hoyelo/GoogleOAuth2.git", :tag => "v#{s.version}" }
+  s.source = { :git => "https://github.com/hoyelo/GoogleOAuth2.git", :tag => s.version.to_s }
   s.platform = :ios, '7.0'
   s.requires_arc = false
   s.source_files = 'Pod/Classes/**/*'
