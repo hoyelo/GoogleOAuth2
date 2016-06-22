@@ -21,9 +21,9 @@
 #import <Foundation/Foundation.h>
 
 #if GTM_USE_SESSION_FETCHER
-#import <gtm_session_fetcher/GTMSessionFetcher.h>
+#import "GTMSessionFetcher.h"
 #else
-#import <gtm_http_fetcher/GTMHTTPFetcher.h>
+#import "GTMHTTPFetcher.h"
 #endif  // GTM_USE_SESSION_FETCHER
 
 #define GTMOAuth2Fetcher GTMBridgeFetcher

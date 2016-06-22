@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D954408CEBD24D2F14666FE /* Pods_GoogleOAuth2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F7E20CEE71C5B0905A3001 /* Pods_GoogleOAuth2_Tests.framework */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		839F689B76CAD94D8F169E66 /* Pods_GoogleOAuth2_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C058C2932D4B80583A1C3E /* Pods_GoogleOAuth2_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EFF6A0A537B127216A0A0C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5F93B30B16D42A5967593D0B /* Pods-GoogleOAuth2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuth2_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -27,10 +28,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		775D15CF3D9EA5901174D1D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		802EFEE05BAB67B983B688B8 /* Pods-GoogleOAuth2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuth2_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8CAFE035C7A6E596DB0E3DB2 /* Pods-GoogleOAuth2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuth2_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		95B95A4A5A0E5298824138B3 /* GoogleOAuth2.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GoogleOAuth2.podspec; path = ../GoogleOAuth2.podspec; sourceTree = "<group>"; };
-		B8C058C2932D4B80583A1C3E /* Pods_GoogleOAuth2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleOAuth2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D139C70A65733C2168F1AF7A /* Pods-GoogleOAuth2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleOAuth2_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2F7E20CEE71C5B0905A3001 /* Pods_GoogleOAuth2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoogleOAuth2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,22 +41,13 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				839F689B76CAD94D8F169E66 /* Pods_GoogleOAuth2_Tests.framework in Frameworks */,
+				5D954408CEBD24D2F14666FE /* Pods_GoogleOAuth2_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45F101DCD3902D218D865646 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CAFE035C7A6E596DB0E3DB2 /* Pods-GoogleOAuth2_Tests.debug.xcconfig */,
-				802EFEE05BAB67B983B688B8 /* Pods-GoogleOAuth2_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -64,7 +55,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				45F101DCD3902D218D865646 /* Pods */,
+				B19C599A1ED78C874A682D61 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +74,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B8C058C2932D4B80583A1C3E /* Pods_GoogleOAuth2_Tests.framework */,
+				E2F7E20CEE71C5B0905A3001 /* Pods_GoogleOAuth2_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +108,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B19C599A1ED78C874A682D61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D139C70A65733C2168F1AF7A /* Pods-GoogleOAuth2_Tests.debug.xcconfig */,
+				5F93B30B16D42A5967593D0B /* Pods-GoogleOAuth2_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,12 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "GoogleOAuth2_Tests" */;
 			buildPhases = (
-				33261BC408C3A5CBD364E7D4 /* Check Pods Manifest.lock */,
+				B735C84EA3602610A04318DD /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				11FDF025B5110E6697322BCE /* Embed Pods Frameworks */,
-				35614ECF23282DBFEBFAAE1F /* Copy Pods Resources */,
+				F07A895167EF8C5B4450786A /* [CP] Embed Pods Frameworks */,
+				914D6256C3F14D89D1447B45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,29 +185,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		11FDF025B5110E6697322BCE /* Embed Pods Frameworks */ = {
+		914D6256C3F14D89D1447B45 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33261BC408C3A5CBD364E7D4 /* Check Pods Manifest.lock */ = {
+		B735C84EA3602610A04318DD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,19 +215,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		35614ECF23282DBFEBFAAE1F /* Copy Pods Resources */ = {
+		F07A895167EF8C5B4450786A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoogleOAuth2_Tests/Pods-GoogleOAuth2_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -330,7 +330,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CAFE035C7A6E596DB0E3DB2 /* Pods-GoogleOAuth2_Tests.debug.xcconfig */;
+			baseConfigurationReference = D139C70A65733C2168F1AF7A /* Pods-GoogleOAuth2_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -353,7 +353,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 802EFEE05BAB67B983B688B8 /* Pods-GoogleOAuth2_Tests.release.xcconfig */;
+			baseConfigurationReference = 5F93B30B16D42A5967593D0B /* Pods-GoogleOAuth2_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
