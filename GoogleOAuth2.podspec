@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name = "GoogleOAuth2"
-  s.version = "1.1.1"
+  s.version = "1.0.126"
   s.summary = "OAuth 2 Controllers (Support 'use_frameworks!')"
   s.description = <<-DESC
       The Google Toolbox for Mac OAuth 2 Controllers make it easy for Cocoa
